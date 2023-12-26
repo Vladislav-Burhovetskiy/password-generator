@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Random password</title>
+  </head>
+  <body class="dark">
+    <div class="main-container">
+      <div class="btn-color-container">
+        <button class="btn-color light" id="btn-light-mode"></button>
+        <button class="btn-color dark" id="btn-dark-mode"></button>
+      </div>
+      <h1 id="title">
+        Generate a
+        <br />
+        <span>random password</span>
+      </h1>
+      <p id="title-description">Never use an insecure password again.</p>
+      <div class="input-btn-container">
+        <button id="generate-btn">
+          Generate passwords
+        </button>
+        <div class="input-title">
+          <input
+            id="input-length"
+            type="number"
+            class="input-length"
+            min="8"
+            max="15"
+            value="15"
+            step="1"
+          />
+          Password length 8-15
+        </div>
+      </div>
+
+      <div class="line"></div>
+      <div class="password">
+        <div>
+          <button class="copy-btn" id="copy-btn-1">
+            <span class="tooltip-text hidden" id="tooltip-one">Copied</span>
+            copy
+          </button>
+          <p id="first-password">>nfJjy!dDvR&ial</p>
+        </div>
+        <div>
+          <button class="copy-btn" id="copy-btn-2">
+            <span class="tooltip-text hidden" id="tooltip-two">Copied</span>
+            copy
+          </button>
+          <p id="second-password">eg>xWij@veiPUwK</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
